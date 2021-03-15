@@ -26,6 +26,16 @@ class Model{
 
 	}
 
+	public function setData($data = array())
+	{
+
+		foreach ($data as $key => $value) {
+			
+			$this ->{"set".$key}($value);
+			
+		}
+	}
+
 }
 
 ?>
